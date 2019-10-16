@@ -9,7 +9,11 @@ def ciag(numbers):
     print(out)
 
 if __name__ == '__main__':
-    #testy
-    arr = [1, 2, 3, 4, 5] 
-    ciag(arr)
+    # testy
+    import doctest
+    doctest.testmod()
+    # na standardowym wejściu
+    data = sys.stdin.read().rstrip()
+    data = map(int, data.split())
+    ciag(data)
 

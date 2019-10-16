@@ -19,6 +19,20 @@ def lastchars(words):
     print(out)
 
 if __name__ == '__main__':
-    #testy
-    firstchars('kotek na ziemi')
-    lastchars('piesek na drzewie')
+    # testy
+    import doctest
+    doctest.testmod()
+
+    if len(sys.argv) > 1:
+        # w podanych plikach
+        for filename in sys.argv[1:]:
+            if filename.startswith('-'):
+                continue
+            with open(filename) as f:
+                firstchars(f.read())
+                lastchars(f.read())
+    else:
+        # na standardowym wejściu
+        data = sys.stdin.read().rstrip()
+        firstchars(data)
+        lastchars(data)

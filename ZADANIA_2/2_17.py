@@ -11,7 +11,19 @@ def zmiana(line):
     print(line)
 
 if __name__ == '__main__':
-    #testy
-    zmiana('GvR byl najlepszym malarzem z linii wszystkich GvR')
+    # testy
+    import doctest
+    doctest.testmod()
 
+    if len(sys.argv) > 1:
+        # w podanych plikach
+        for filename in sys.argv[1:]:
+            if filename.startswith('-'):
+                continue
+            with open(filename) as f:
+                zmiana(f.read())
+    else:
+        # na standardowym wejściu
+        data = sys.stdin.read().rstrip()
+        zmiana(data)
 
