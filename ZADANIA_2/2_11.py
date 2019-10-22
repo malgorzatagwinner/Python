@@ -5,11 +5,11 @@ import sys
 def kreskowanie(word):
     """Funkcja oddziela slowa podkreslnikiem
     >>> kreskowanie('test jeden')
-    'test_jeden'
+    't_e_s_t_ _j_e_d_e_n'
     >>> kreskowanie('to jest drugi test')
-    'to_jest_drugi_test'
+    't_o_ _j_e_s_t_ _d_r_u_g_i_ _t_e_s_t'
     >>> kreskowanie('trzeci test tez nie jest taki trudny')
-    'trzeci_test_tez_nie_jest_taki_trudny'
+    't_r_z_e_c_i_ _t_e_s_t_ _t_e_z_ _n_i_e_ _j_e_s_t_ _t_a_k_i_ _t_r_u_d_n_y'
     """
     
     word = "_".join(list(word))

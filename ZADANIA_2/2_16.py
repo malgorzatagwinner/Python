@@ -3,20 +3,20 @@
 import sys
 
 def zmiana(line):
+    """ Funkcja zmienia ciag znakow 'GvR' na 'Guido van Rossum'
+    >>> zmiana('GvR wielkim poeta nie byl')
+    'Guido van Rossum wielkim poeta nie byl'
+    >>> zmiana('GvR III byl najlepszym GvR ze wszystkich GvR')
+    'Guido van Rossum III byl najlepszym Guido van Rossum ze wszystkich Guido van Rossum'
+    >>> zmiana('GrR GvR Gvr gvr gVr')
+    'GrR Guido van Rossum Gvr gvr gVr'
+    
+    """
     line = line.replace('GvR', 'Guido van Rossum')
     return line
 
 if __name__ == '__main__':
     # testy
-    """ Funkcja zmienia ciag znakow 'GvR' na 'Guido van Rossum'
-    >>> zmiana('GvR wielkim poeta nie byl')
-    'Guido van Rossum wielkim poeta nie byl'
-    >>> zmiana('GvR III byl najlepszym GvR ze wszystkich GvR')
-    'Guido van Rossum byl najlepszym Guido van Rossum ze wszystkich Guido van Rossum'
-    >>> zmiana('GrR GvR Gvr gvr gVr')
-    'GrR GvR Gvr gvr gVr'
-    
-    """
     import doctest
     doctest.testmod()
 
@@ -30,4 +30,4 @@ if __name__ == '__main__':
     else:
         # na standardowym wejściu
         data = sys.stdin.read().rstrip()
-        zmiana(data)
+        print(zmiana(data))

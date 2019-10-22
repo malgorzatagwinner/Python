@@ -35,5 +35,5 @@ if __name__ == '__main__':
     else:
         # na standardowym wejściu
         data = sys.stdin.read().rstrip()
-        (length, word) = najdluzsze(data)
+        (length, word) = najdluzszy(data)
         print(f'Najdluzsze slowo: {word} (dlugosc: {length})')

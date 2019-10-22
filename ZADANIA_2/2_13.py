@@ -7,7 +7,7 @@ def sumaliter(line):
     >>> sumaliter('Test')
     4
     >>> sumaliter('Tu test jest troche dluzszy')
-    25
+    23
     """
     line = line.split()
     out = 0
