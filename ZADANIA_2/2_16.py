@@ -4,10 +4,19 @@ import sys
 
 def zmiana(line):
     line = line.replace('GvR', 'Guido van Rossum')
-    print(line)
+    return line
 
 if __name__ == '__main__':
     # testy
+    """ Funkcja zmienia ciag znakow 'GvR' na 'Guido van Rossum'
+    >>> zmiana('GvR wielkim poeta nie byl')
+    'Guido van Rossum wielkim poeta nie byl'
+    >>> zmiana('GvR III byl najlepszym GvR ze wszystkich GvR')
+    'Guido van Rossum byl najlepszym Guido van Rossum ze wszystkich Guido van Rossum'
+    >>> zmiana('GrR GvR Gvr gvr gVr')
+    'GrR GvR Gvr gvr gVr'
+    
+    """
     import doctest
     doctest.testmod()
 

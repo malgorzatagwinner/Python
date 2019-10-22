@@ -3,6 +3,12 @@
 import sys
 
 def najdluzszy(line):
+    """ Funkcja znajduje najdluzszy wyraz w podanym stringu oraz jego dlugosc
+    >>> najdluzszy('Tu ja jestem najdluzszy')
+    ('najdluzszy', 10)
+    >>> najdluzszy('Superkalifradalistodekspialitycznie fajnie')
+    ('Superkalifradalistodekspialitycznie', 35)
+    """
     line = line.split()
     out = ''
     out_len = 0;
@@ -11,7 +17,7 @@ def najdluzszy(line):
             out_len = len(i)
             out = i
 
-    print("Najdluzsze slowo: ", out, ", jego dlugosc: ", out_len)
+    return(out, out_len)
 
 if __name__ == '__main__':
     # testy
@@ -24,8 +30,10 @@ if __name__ == '__main__':
             if filename.startswith('-'):
                 continue
             with open(filename) as f:
-                najdluzszy(f.read())
+                (length, word) = najdluzszy(f.read())
+                print(f'{filename}: Najdluzsze slowo: "{out}" (dlugosc: {length})')
     else:
         # na standardowym wejściu
         data = sys.stdin.read().rstrip()
-        najdluzszy(data)
+        (length, word) = najdluzsze(data)
+        print(f'Najdluzsze slowo: {word} (dlugosc: {length})')

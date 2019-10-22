@@ -3,11 +3,17 @@
 import sys
 
 def sumaliter(line):
+    """ Funkcja ta znajduje laczna dlugosc wyrazow w podanym stringu
+    >>> sumaliter('Test')
+    4
+    >>> sumaliter('Tu test jest troche dluzszy')
+    25
+    """
     line = line.split()
     out = 0
     for i in line:
         out+=len(i)
-    print(out)
+    return out
 
 if __name__ == '__main__':
     # testy
@@ -20,8 +26,8 @@ if __name__ == '__main__':
             if filename.startswith('-'):
                 continue
             with open(filename) as f:
-                sumaliter(f.read())
+                print(sumaliter(f.read()))
     else:
         # na standardowym wejściu
         data = sys.stdin.read().rstrip()
-        sumaliter(data)
+        print(sumaliter(data))

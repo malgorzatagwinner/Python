@@ -3,7 +3,15 @@
 import sys
 
 def liczenie(line):
-    print(line.count('0'))
+    """ Funkcja znajduje liczbe cyfr zero w liczbie calkowitej
+    >>> liczenie(1010101010)
+    5
+    >>> liczenie(10000000000)
+    10
+    >>> liczenie(10000000000000000000000000000000000000000)
+    40
+    """
+    return str(line).count('0')
 
 if __name__ == '__main__':
     # testy
