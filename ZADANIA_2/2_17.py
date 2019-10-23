@@ -40,9 +40,10 @@ if __name__ == '__main__':
             if filename.startswith('-'):
                 continue
             with open(filename) as f:
-                zmiana(f.read())
+                print(zmiana(f.read()))
+                print(zmianadlugosc(f.read()))
     else:
         # na standardowym wejściu
         data = sys.stdin.read().rstrip()
-        zmiana(data)
-
+        print(zmiana(data))
+        print(zmianadlugosc(data))

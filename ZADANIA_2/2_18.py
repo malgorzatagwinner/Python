@@ -24,11 +24,11 @@ if __name__ == '__main__':
             if filename.startswith('-'):
                 continue
             with open(filename) as f:
-                liczenie(f.read())
+                print(liczenie(f.read()))
     else:
         # na standardowym wejściu
         data = sys.stdin.read().rstrip()
-        liczenie(data)
+        print(liczenie(data))
 
 
 
