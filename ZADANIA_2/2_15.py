@@ -26,8 +26,9 @@ if __name__ == '__main__':
                 continue
             with open(filename) as f:
                 print(f'{filename}: {ciag()}')
+    else:
     # na standardowym wejściu
-    data = sys.stdin.read().rstrip()
-    data = map(int, data.split())
-    print(ciag(data))
+        data = sys.stdin.read().rstrip()
+        data = map(int, data.split())
+        print(ciag(data))
 
