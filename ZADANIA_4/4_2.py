@@ -12,9 +12,9 @@ def miarka(number):
     '|....|....|....|....|....|....|....|....|....|....|....|....|\\n0    1    2    3    4    5    6    7    8    9   10   11   12'
     """
     out = "|" + "....|" * number + "\n" + "0"
-            for i in range(number):
-                out+= str(i+1).rjust(5)
-            return(out)
+    for i in range(number):
+        out+= str(i+1).rjust(5)
+    return(out)
         
 def wymiary(prompt):
     while(True):

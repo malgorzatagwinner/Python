@@ -2,6 +2,17 @@
 # -*- coding: utf -8-*-
 import sys
 
+def number():
+    while True:
+        linia = input('Podaj liczbe: ')
+        try:
+            number = int(linia)
+        except ValueError:
+            print('To nie jest liczba, sprobuj jeszcze raz!')
+        else:
+            return number
+
+
 def factorial(n):
     """ Funkcja oblicza silnie podanej w argumencie liczby
     >>> factorial(5)
@@ -20,3 +31,5 @@ def factorial(n):
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
+    n = number()
+    print('Silnia z liczby ' + str(n) + ' to: ' + str(factorial(n))) 

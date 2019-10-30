@@ -1,6 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf -8-*-
 import sys
+def number():
+    while True:
+        linia = input('Podaj liczbe: ')
+        try:
+            number = int(linia)
+        except ValueError:
+            print('To nie jest liczba, sprobuj jeszcze raz!')
+        else:
+            return number
+
 
 def fibonacci(n):
     """ Funkcja zwraca n-ty wyraz ciagu Fibonacciego
@@ -27,3 +37,6 @@ def fibonacci(n):
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
+    n = number()
+    print('Ciag Fibonacciego dla liczby ' + str(n) + ' to: ' + str(fibonacci(n))) 
+

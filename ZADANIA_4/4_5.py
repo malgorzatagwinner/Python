@@ -24,6 +24,6 @@ def reverse_recursive(sequence, left, right):
     return reverse_recursive(sequence, left+1, right-1)
    
 if __name__ == '__main__':
-    # testy jednak inaczej
+    # testy
     import doctest
     doctest.testmod()
