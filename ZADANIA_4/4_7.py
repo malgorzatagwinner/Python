@@ -2,7 +2,7 @@
 # -*- coding: utf -8-*-
 import sys
 def flatten(sequence):
-    """ Funkcja zwraca sume liczb z sekwencji, ktora moze byc zagniezdzona
+    """ Funkcja zwraca splaszczoa liste wszystkich elementow z sekwencji
     >>> flatten([1, [2, [3]]])
     [1, 2, 3]
     >>> flatten([1,(2,3),[],[4,(5,6,7)],8,[9]])

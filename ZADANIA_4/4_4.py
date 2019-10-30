@@ -38,5 +38,5 @@ if __name__ == '__main__':
     import doctest
     doctest.testmod()
     n = number()
-    print('Ciag Fibonacciego dla liczby ' + str(n) + ' to: ' + str(fibonacci(n))) 
+    print(str(n) + '-a liczba ciagu Fibonacciego to: ' + str(fibonacci(n))) 
 
