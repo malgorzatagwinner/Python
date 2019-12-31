@@ -6,10 +6,11 @@ from random import gauss as g
 
 def ad_a(n):
     lista = list(range(n))
-    return r.shuffle(lista)
+    r.shuffle(lista)
+    return lista
 
 def ad_b(n):
-    return[n-1] + list(range(n-2))
+    return[n-1] + list(range(n-1))
 
 def ad_c(n):
     return list(range(n-2, -1, -1)) +[n-1]
@@ -32,4 +33,9 @@ def ad_e(n):
     while n > 0:
         yield r.randint(0, max)
         n-=1
-
+int __name__ == '__main__':
+    print(ad_a(5))
+    print(ad_b(5))
+    print(ad_c(5))
+    print(list(ad_d(5)))
+    print(list(ad_e(5)))
