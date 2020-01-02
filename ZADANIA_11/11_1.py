@@ -33,7 +33,7 @@ def ad_e(n):
     while n > 0:
         yield r.randint(0, max)
         n-=1
-int __name__ == '__main__':
+if __name__ == '__main__':
     print(ad_a(5))
     print(ad_b(5))
     print(ad_c(5))
