@@ -14,8 +14,7 @@ def partition(lista, begin, r):
 def quicksort_iter(lista, begin, r):
     stos = [(begin, r)]
     while len(stos)!=0:
-        a, b = stos[-1]
-        stos.pop(-1)
+        a, b = stos.pop(-1)
         q = partition(lista, a, b)
             
         if q-1 > a:
