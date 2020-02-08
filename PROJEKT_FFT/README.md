@@ -1,13 +1,15 @@
-Małgorzata Gwinner  |      FFT W JĘZYKU PYTHON       |    Kraków, 21.01.2020 r.
-===============================================================================
+##FFT W JĘZYKU PYTHON
 
-* Zawartosc:
-============
+#Zawartosc:
+
 Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
-  I. fft.py
-  II. poly.py
-  III. numpy_fft.py
-  IV. porownanie.py
+
+
+  1. fft.py
+  1. poly.py
+  1. numpy_fft.py
+  1. porownanie.py
+
 
 -------------------------------------------------------------------------------
   
@@ -25,13 +27,13 @@ Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 	współczynniki wielomianów do ograniczenia stopnia 2n, dodając do każdej
 	zerowych współczynników przy najwyższych potęgach x)
 
-	2. Ewaluacja: Obliczenie reprezentacji przez wartości w punktach,
+	1. Ewaluacja: Obliczenie reprezentacji przez wartości w punktach,
 	stosując dwukrotnie FFT rzędu 2n.
 
-	3. Mnożenie po współrzędnych: Obliczenie reprezentacji przez wartości
+	1. Mnożenie po współrzędnych: Obliczenie reprezentacji przez wartości
 	w punktach wielomianu, wymnażając odpowiadające sobie wartości.
 
-	4. Interpolacja: Utworzenie reprezentacji przez współczynniki
+	1. Interpolacja: Utworzenie reprezentacji przez współczynniki
 
 	Kroki 1 i 3 realizuje się w czasie O(n), a 2 i 4 w czasie O(n logn),
 	dając temu algorytmowi złożoność O(n logn).
@@ -95,9 +97,9 @@ z pliku fft.py, a mnożeniem wykonywanym w pliku numpy_fft.py.
 * Wnioski:
 ==========
 Ze wszystkich z analizowanych sposobów, najszybszym jest mnożenie wbudowane
-do modułu numpy. Dzieje się tak, gdyż jest wykonywane jako biblioteka
-języka C.
-Jednakże, widać też, że Szybka Transformata Fouriera jest znacznie szybsza
+do modułu numpy. Dzieje się tak, gdyż wsztstkie operacje są wykonywane wewnątrz
+biblioteki numpy (napisanej w języku C), a nie interpretowane przez Pythona.
+Widać też, że Szybka Transformata Fouriera jest znacznie szybsza
 od tradycyjnej metody mnożenia. Dlatego jest ona wykorzystywana przy wszelkich
 rozbudowanych problemach, w których ważna jest szybkość działania nawet
 najprostszych operacji matematycznych.
