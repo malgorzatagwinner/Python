@@ -1,6 +1,6 @@
-## FFT W JĘZYKU PYTHON
+# FFT W JĘZYKU PYTHON
 
-# Zawartosc:
+## Zawartosc:
 
 Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 
@@ -13,7 +13,7 @@ Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 
 -------------------------------------------------------------------------------
   
- I. Plik fft.py
+### I. Plik fft.py
  ===============
 	Plik fft.py jest implementacją algorytmu Szybkiej Transformaty Fouriera
 	(FFT) opisanej w książce "Wprowadzenie do algorytmów" autorstwa
@@ -40,7 +40,7 @@ Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 
 -------------------------------------------------------------------------------
 
- II. Plik poly.py
+### II. Plik poly.py
  =================
 	Plik poly.py zawiera implementację wielomianów oraz wszystkich
 	najprostszych operacji matematycznych na nich wykonywanych,
@@ -49,12 +49,12 @@ Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 
 -------------------------------------------------------------------------------
 
- III. Plik numpy_fft.py
+### III. Plik numpy_fft.py
  ======================
  	Plik numpy.py zawiera operację mnożenia wielomianów za pomocą
 	wbudowanej funkcji fft() należącej do modułu numpy.
 
- IV. Plik porownanie.py 
+### IV. Plik porownanie.py 
  ========================
  	Plik porownanie.py pokazuje porównanie szybkości działania trzech
 	algorytmów - FFT, "tradycyjnego" mnożenia oraz fft wbudowanego
@@ -64,7 +64,7 @@ Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 
 	
 
-# Jak uruchomić program:
+## Jak uruchomić program:
 
 Do uruchomienia programu potrzebne jest posiadanie zainstalowanego Pythona
 wersji 3.
@@ -73,7 +73,7 @@ Aby uruchomić porównanie wszystkich analizowanych sposobów mnożenia, należy
 wykonać komendę:
 	python3 porownanie.py
 
-# Wyniki uruchomienia programu:
+## Wyniki uruchomienia programu:
 	Po uruchomieniu programu, jako pierwsza wyświetla się informacja o ustalonym
 	rozmiarze tabel współczynników (obie tabele są takiego rozmiaru).
 
@@ -92,7 +92,7 @@ wykonać komendę:
 	Transformaty Fouriera z pliku fft.py, a mnożeniem wykonywanym w pliku
 	numpy_fft.py.
 
-# Wnioski:
+## Wnioski:
 
 	Ze wszystkich z analizowanych sposobów, najszybszym jest mnożenie wbudowane
 	do modułu numpy. Dzieje się tak, gdyż wsztstkie operacje są wykonywane wewnątrz
