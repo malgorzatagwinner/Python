@@ -14,12 +14,7 @@ Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 -------------------------------------------------------------------------------
   
 ### I. Plik fft.py
-	Plik fft.py jest implementacją algorytmu Szybkiej Transformaty Fouriera
-	(FFT) opisanej w książce "Wprowadzenie do algorytmów" autorstwa
-	Cormen Thomas H., Leiserson Charles E., Rivest Ronald L, Clifford Stein.
-
-	Szybka Transformata Fouriera zmniejsza czas mnożenia wielomianów z O(n^2)
-	do O(n logn).
+	Plik fft.py jest implementacją algorytmu Szybkiej Transformaty Fouriera	(FFT) opisanej w książce "Wprowadzenie do algorytmów" autorstwa	Cormen Thomas H., Leiserson Charles E., Rivest Ronald L, Clifford Stein. Szybka Transformata Fouriera zmniejsza czas mnożenia wielomianów z O(n^2) do O(n logn).
 
 	Szybka Transformata Fouriera działa według schematu:
 	1. Podwojenie ograniczenia stopnia: rozszerzenie reprezentacji przez
