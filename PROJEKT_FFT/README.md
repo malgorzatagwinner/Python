@@ -14,7 +14,6 @@ Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 -------------------------------------------------------------------------------
   
 ### I. Plik fft.py
- ===============
 	Plik fft.py jest implementacją algorytmu Szybkiej Transformaty Fouriera
 	(FFT) opisanej w książce "Wprowadzenie do algorytmów" autorstwa
 	Cormen Thomas H., Leiserson Charles E., Rivest Ronald L, Clifford Stein.
@@ -41,7 +40,6 @@ Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 -------------------------------------------------------------------------------
 
 ### II. Plik poly.py
- =================
 	Plik poly.py zawiera implementację wielomianów oraz wszystkich
 	najprostszych operacji matematycznych na nich wykonywanych,
 	tj. dodawanie, odejmowanie, mnożenie, dzielenie, etc.
@@ -50,12 +48,10 @@ Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 -------------------------------------------------------------------------------
 
 ### III. Plik numpy_fft.py
- ======================
  	Plik numpy.py zawiera operację mnożenia wielomianów za pomocą
 	wbudowanej funkcji fft() należącej do modułu numpy.
 
 ### IV. Plik porownanie.py 
- ========================
  	Plik porownanie.py pokazuje porównanie szybkości działania trzech
 	algorytmów - FFT, "tradycyjnego" mnożenia oraz fft wbudowanego
 	do modułu numpy. Można w nim ustalić ilość współczynników wielomianu,
