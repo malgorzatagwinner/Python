@@ -1,6 +1,6 @@
-##FFT W JĘZYKU PYTHON
+## FFT W JĘZYKU PYTHON
 
-#Zawartosc:
+# Zawartosc:
 
 Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 
@@ -27,13 +27,13 @@ Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 	współczynniki wielomianów do ograniczenia stopnia 2n, dodając do każdej
 	zerowych współczynników przy najwyższych potęgach x)
 
-	1. Ewaluacja: Obliczenie reprezentacji przez wartości w punktach,
+	2. Ewaluacja: Obliczenie reprezentacji przez wartości w punktach,
 	stosując dwukrotnie FFT rzędu 2n.
 
-	1. Mnożenie po współrzędnych: Obliczenie reprezentacji przez wartości
+	3. Mnożenie po współrzędnych: Obliczenie reprezentacji przez wartości
 	w punktach wielomianu, wymnażając odpowiadające sobie wartości.
 
-	1. Interpolacja: Utworzenie reprezentacji przez współczynniki
+	4. Interpolacja: Utworzenie reprezentacji przez współczynniki
 
 	Kroki 1 i 3 realizuje się w czasie O(n), a 2 i 4 w czasie O(n logn),
 	dając temu algorytmowi złożoność O(n logn).
@@ -64,8 +64,7 @@ Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 
 	
 
-* Jak uruchomić program:
-=========================
+# Jak uruchomić program:
 
 Do uruchomienia programu potrzebne jest posiadanie zainstalowanego Pythona
 wersji 3.
@@ -74,32 +73,31 @@ Aby uruchomić porównanie wszystkich analizowanych sposobów mnożenia, należy
 wykonać komendę:
 	python3 porownanie.py
 
-* Wyniki uruchomienia programu:
-===============================
+# Wyniki uruchomienia programu:
+	Po uruchomieniu programu, jako pierwsza wyświetla się informacja o ustalonym
+	rozmiarze tabel współczynników (obie tabele są takiego rozmiaru).
 
-Po uruchomieniu programu, jako pierwsza wyświetla się informacja o ustalonym
-rozmiarze tabel współczynników (obie tabele są takiego rozmiaru).
+	Jako drugi, wyświetlany jest czas mnożenia wykonywanego w pliku fft.py.
 
-Jako drugi, wyświetlany jest czas mnożenia wykonywanego w pliku fft.py.
+	W trzeciej linijce, wyświetlany jest czas mnożenia wykonywanego w pliku poly.py.
 
-W trzeciej linijce, wyświetlany jest czas mnożenia wykonywanego w pliku poly.py.
+	W czwartej linijce, wyświetlany jest wynik sprawdzenia, czy powyższe sposoby
+	mnożenia dały ten sam wynik.
 
-W czwartej linijce, wyświetlany jest wynik sprawdzenia, czy powyższe sposoby
-mnożenia dały ten sam wynik.
+	W piątej linijce, wyświetlany jest czas mnożenia wykonywanego w pliku
+	numpy_fft.py.
 
-W piątej linijce, wyświetlany jest czas mnożenia wykonywanego w pliku
-numpy_fft.py.
+	W ostatniej linijce, raz jeszcze jest sprawdzana zgodność wyników
+	działania mnożenia, tym razem pomiędzy mnożeniem za pomocą Szybkiej
+	Transformaty Fouriera z pliku fft.py, a mnożeniem wykonywanym w pliku
+	numpy_fft.py.
 
-W ostatniej linijce, raz jeszcze jest sprawdzana zgodność wyników działania
-mnożenia, tym razem pomiędzy mnożeniem za pomocą Szybkiej Transformaty Fouriera
-z pliku fft.py, a mnożeniem wykonywanym w pliku numpy_fft.py.
+# Wnioski:
 
-* Wnioski:
-==========
-Ze wszystkich z analizowanych sposobów, najszybszym jest mnożenie wbudowane
-do modułu numpy. Dzieje się tak, gdyż wsztstkie operacje są wykonywane wewnątrz
-biblioteki numpy (napisanej w języku C), a nie interpretowane przez Pythona.
-Widać też, że Szybka Transformata Fouriera jest znacznie szybsza
-od tradycyjnej metody mnożenia. Dlatego jest ona wykorzystywana przy wszelkich
-rozbudowanych problemach, w których ważna jest szybkość działania nawet
-najprostszych operacji matematycznych.
+	Ze wszystkich z analizowanych sposobów, najszybszym jest mnożenie wbudowane
+	do modułu numpy. Dzieje się tak, gdyż wsztstkie operacje są wykonywane wewnątrz
+	biblioteki numpy (napisanej w języku C), a nie interpretowane przez Pythona.
+	Widać też, że Szybka Transformata Fouriera jest znacznie szybsza
+	od tradycyjnej metody mnożenia. Dlatego jest ona wykorzystywana przy
+	wszelkich rozbudowanych problemach, w których ważna jest szybkość
+	działania nawet najprostszych operacji matematycznych.
