@@ -1,6 +1,6 @@
 # FFT W JĘZYKU PYTHON
 
-## Zawartosc:
+## Zawartość:
 
 Katalog PROJEKT_FFT zawiera poniższe programy i funkcje:
 
