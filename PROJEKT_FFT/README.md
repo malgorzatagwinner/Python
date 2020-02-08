@@ -95,10 +95,9 @@ z pliku fft.py, a mnożeniem wykonywanym w pliku numpy_fft.py.
 * Wnioski:
 ==========
 Ze wszystkich z analizowanych sposobów, najszybszym jest mnożenie wbudowane
-do modułu numpy. Dzieje się tak, gdyż jest interpretowane jako biblioteka
+do modułu numpy. Dzieje się tak, gdyż jest wykonywane jako biblioteka
 języka C.
 Jednakże, widać też, że Szybka Transformata Fouriera jest znacznie szybsza
 od tradycyjnej metody mnożenia. Dlatego jest ona wykorzystywana przy wszelkich
 rozbudowanych problemach, w których ważna jest szybkość działania nawet
 najprostszych operacji matematycznych.
-NUMPY PORÓWNAĆ Z FFT Z NUMPY'A I PRZEDSTAWIĆ LISTĘ WSPÓŁCZYNNIKÓW JAKO NUMPY
